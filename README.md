@@ -4,18 +4,6 @@ An **agentic system** that migrates an iOS app from **VIPER, Clean, MVVM, or MVV
 architecture to a modern, modular **TCA** stack — **Tuist** project generation, **Swift Testing**
 (no XCTest), one module per feature — and verifies the result by building and testing it until green.
 
-## Three-layer architecture
-
-| Layer | Tool | Owns |
-|---|---|---|
-| **Spec** | [GitHub Spec Kit](https://github.com/github/spec-kit) (`specify`) | Constitution + per-feature spec/plan/tasks — reviewable *before* any code. |
-| **Execution** | [RUFLO](https://github.com/ruvnet/ruflo) (`3.7.0-alpha.8`) | Hive-mind swarm that executes the tasks + AgentDB memory; MCP server `claude-flow`. |
-| **Domain** | this repo | Knowledge base (VIPER/Clean→TCA rules), 6 agent-skills, helper scripts (`code_map`, `build_check` + `xcsift`), Tuist templates. |
-
-Spec-driven *what* → swarm-executed *how* → Swift/TCA *expertise*, closed by a real
-`tuist build` / `swift test` loop. See [`.specify/memory/constitution.md`](.specify/memory/constitution.md)
-for the governing rules and [`knowledge/`](knowledge/README.md) for the mapping reference.
-
 ## Repo layout
 
 ```
@@ -56,13 +44,6 @@ scripts/single_claude_agent_migrate.sh "…same objective…"                   
 bash scripts/build_check.sh workspace/output     # tuist generate + build + test | xcsift
 ```
 
-## Demos (two real VIPER apps, both green)
-
-| Source app | Output | Modules | Tests | Highlights |
-|---|---|---|---|---|
-| [`griddynamics/VIPER-SWIFT`](https://github.com/griddynamics/VIPER-SWIFT) (TODO) | `workspace/output/` | 5 ✅ | 7 ✅ | date-relation domain logic ported to pure tested fns; modal Add via `@Presents` sheet; reload-on-save; `Clock`→`@Dependency(\.date)` |
-| [`amitshekhariitbhu/iOS-Viper-Architecture`](https://github.com/amitshekhariitbhu/iOS-Viper-Architecture) (Posts) | `workspace/output-iosviper-posts/` | 6 ✅ | 6 ✅ | cache-first→remote→cache parity; `StackState` navigation; Interactor/DataManager → `@Dependency` clients |
-
 Both emit a modular TCA project (`Core/*`, `Features/*`, `App`) with `@Reducer`/`@ObservableState`/
 `@Dependency` + Swift Testing. In both, the Presenter/Interactor/WireFrame are **dissolved** into
 reducers + dependencies + state-driven navigation. See each output's
@@ -77,4 +58,3 @@ reducers + dependencies + state-driven navigation. See each output's
   migration completes even if the alpha swarm wiring misbehaves.
 - **Pinned:** TCA 1.25.2 · Tuist 4.139 · Swift 6 · iOS 17. Update [`knowledge/`](knowledge/README.md) first if these drift.
 ```
-# UA-Mobile-AI-hackaton
