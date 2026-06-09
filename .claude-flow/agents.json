@@ -1,0 +1,82 @@
+{
+  "agents": {
+    "hive-worker-1780610191411-k497": {
+      "agentId": "hive-worker-1780610191411-k497",
+      "agentType": "worker",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "role": "worker",
+        "hiveRole": "worker"
+      },
+      "createdAt": "2026-06-04T21:56:31.411Z",
+      "domain": "hive-mind"
+    },
+    "hive-worker-1780610223429-nxe0": {
+      "agentId": "hive-worker-1780610223429-nxe0",
+      "agentType": "worker",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "role": "worker",
+        "hiveRole": "worker"
+      },
+      "createdAt": "2026-06-04T21:57:03.429Z",
+      "domain": "hive-mind"
+    },
+    "hive-worker-1780610606819-3g82": {
+      "agentId": "hive-worker-1780610606819-3g82",
+      "agentType": "worker",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "role": "worker",
+        "hiveRole": "worker"
+      },
+      "createdAt": "2026-06-04T22:03:26.819Z",
+      "domain": "hive-mind"
+    },
+    "hive-worker-1780611183598-5q8f": {
+      "agentId": "hive-worker-1780611183598-5q8f",
+      "agentType": "worker",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "role": "worker",
+        "hiveRole": "worker"
+      },
+      "createdAt": "2026-06-04T22:13:03.598Z",
+      "domain": "hive-mind"
+    },
+    "hive-worker-1780611778753-hx67": {
+      "agentId": "hive-worker-1780611778753-hx67",
+      "agentType": "worker",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "role": "worker",
+        "hiveRole": "worker"
+      },
+      "createdAt": "2026-06-04T22:22:58.753Z",
+      "domain": "hive-mind"
+    },
+    "hive-worker-1780611908067-oqei": {
+      "agentId": "hive-worker-1780611908067-oqei",
+      "agentType": "worker",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "role": "worker",
+        "hiveRole": "worker"
+      },
+      "createdAt": "2026-06-04T22:25:08.067Z",
+      "domain": "hive-mind"
+    }
+  }
+}

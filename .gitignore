@@ -1,0 +1,25 @@
+# Secrets — never commit the API key
+.env
+*.pem
+*.key
+
+# Swift / Xcode / Tuist build artifacts (regenerable)
+.build/
+DerivedData/
+**/*.xcodeproj
+**/*.xcworkspace
+workspace/output*/.build-logs/
+workspace/output*/Tuist/.build/
+workspace/output*/Tuist/.tuist-version
+.swiftpm/
+workspace/*
+RIBS/output/*
+
+# RUFLO runtime data / sessions
+.claude-flow/data/
+.claude-flow/logs/
+.claude-flow/sessions/
+.hive-mind/
+
+# macOS
+.DS_Store
